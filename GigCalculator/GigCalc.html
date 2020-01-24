@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Taking the gig, are we?</title>
+  <link rel="stylesheet" type="text/css" href="Calcstyle.css">
+</head>
+
+  <body>
+    <div id="container">
+      <h1>Gig-o-meter</h1>
+      <div id="calculator">
+
+
+        <form>
+          <p>Where (and/or when) is the hit?
+            <p>
+              <select id="venue">
+                <option disabled selected value="0">-- Choose a Location --</option>
+                <option value="20">Noce - Wed (Big Band)</option>
+                <option value="250">Noce - Thurs</option>
+                <option value="500">Noce - Fri/Sat</option>
+                <option value="100">The LiFT</option>
+                <option value="200">The Continental</option>
+                <option value="300">Star Bar - Mon-Thurs</option>
+                <option value="500">Star Bar - Fri-Sat</option>
+                <!-- <option value="0.05">Private Party</option> -->
+                <!-- Perhaps figure out a way to plug in Private Party stuff someday? Have
+                to get more info about how many hours playing, divide $50/person/hour, etc...-->
+              </select>
+
+        </form>
+
+        <form>
+          <p>How much do you anticipate making in tips? <br>
+            <p>
+          $ <input id="tipAmt" type="text" placeholder="Tip Amount">
+        </form>
+
+        <p>How many people are on the gig? <br>(leave empty for Noce Wednesdays)</p>
+        <input id="peopleamt" type="text" placeholder="Number of Musicians"> people
+        <button type="button" id="calculate">What's the Bread?!</button>
+
+      </div>
+      <!--calculator end-->
+      <div id="totalPayment">
+        <sup>$</sup><span id="payment">0.00</span>
+        <small id="each">EACH</small>
+      </div>
+      <!--totalTip end-->
+
+    </div>
+    <!--container end-->
+
+    <script type="text/javascript" src="gigpaymentcalc.js"></script>
+
+  </body>
+
+  </html>
