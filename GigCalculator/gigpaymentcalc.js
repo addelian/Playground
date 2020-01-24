@@ -1,4 +1,4 @@
-//Calculate Tip
+//Calculate Payout
 function calculateBread() {
   var gigPayment = document.getElementById("venue").value;
   var tipAmt = document.getElementById("tipAmt").value;
@@ -23,9 +23,9 @@ function calculateBread() {
 
   //Calculate payment amount
   var total = (Number(gigPayment) + Number(tipAmt)) / numOfPeople;
-  // //round to two decimal places
+  //round to two decimal places
   total = Math.round(total * 100) / 100;
-  //next line allows us to always have two digits after decimal point
+  //always have two digits after decimal point
   total = total.toFixed(2);
   //Display the tip
   document.getElementById("totalPayment").style.display = "block";
